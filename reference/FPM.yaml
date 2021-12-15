@@ -1,0 +1,28 @@
+openapi: 3.1.0
+info:
+  title: FIM
+  version: '1.0'
+servers:
+  - url: 'http://localhost/PUBAPI/FIM'
+    description: 财务系统
+paths:
+  '/BusinessGroup/{BGID}':
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-BusinessGroup
+    parameters:
+      - $ref: ./common/common.yaml#/components/parameters/BGID
+  '/BusinessUnit/{BUID}':
+    get:
+      summary: 获取 BU
+      tags: []
+      responses: {}
+      operationId: get-BusinessUnit
+      description: ''
+    parameters:
+      - $ref: ./common/common.yaml#/components/parameters/BUID
+components:
+  schemas: {}
+  parameters: {}

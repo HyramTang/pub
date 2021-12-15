@@ -1,0 +1,41 @@
+openapi: 3.1.0
+info:
+  title: HRM
+  version: '1.0'
+servers:
+  - url: 'http://localhost/PUBAPI/HRM'
+    description: 人事系统
+paths:
+  '/CXO/{EmpCode}':
+    get:
+      summary: Get CXO
+      tags: []
+      responses: {}
+      operationId: get-CXO
+    parameters:
+      - $ref: ./common/common.yaml#/components/parameters/EmpCode
+  /RoutingAuth:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-RoutingAuth
+      description: ''
+  '/Employees/{EmpCode}':
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-Employee
+    parameters:
+      - $ref: ./common/common.yaml#/components/parameters/EmpCode
+  '/Employees/{EmpCode}/Deputy':
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-Employee
+    parameters:
+      - $ref: ./common/common.yaml#/components/parameters/EmpCode
+components:
+  schemas: {}

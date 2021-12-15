@@ -1,0 +1,52 @@
+openapi: 3.1.0
+info:
+  title: ORG
+  version: '1.0'
+servers:
+  - url: 'http://localhost/PUBAPI/ORG'
+    description: 组织系统
+paths:
+  '/Department/{DeptCode}':
+    parameters:
+      - $ref: ./common/common.yaml#/components/parameters/DeptCode
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-Department-DeptCode
+  '/BusinessGroup/{BGID}':
+    parameters:
+      - $ref: ./common/common.yaml#/components/parameters/BGID
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-BusinessGroup-BGID
+      parameters: []
+  '/BusinessUnit/{BUID}':
+    parameters:
+      - $ref: ./common/common.yaml#/components/parameters/BUID
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-BusinessUnit-BUID
+      parameters: []
+  '/BusinessGroup/{BGID}/Head':
+    parameters:
+      - $ref: ./common/common.yaml#/components/parameters/BGID
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-BusinessGroup-BGID-Head
+  '/BusinessUnit/{BUID}/Head':
+    parameters:
+      - $ref: ./common/common.yaml#/components/parameters/BUID
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-BusinessGroup-BGID-Head
+components:
+  schemas: {}

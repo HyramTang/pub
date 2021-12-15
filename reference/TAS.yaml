@@ -1,0 +1,18 @@
+openapi: 3.1.0
+info:
+  title: TAS
+  version: '1.0'
+servers:
+  - url: 'http://localhost/PUBAPI/TAS'
+    description: 出勤系统
+paths:
+  '/Attendance/{EmpCode}':
+    parameters:
+      - $ref: ./common/common.yaml#/components/parameters/EmpCode
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-Attendance-EmpCode
+components:
+  schemas: {}

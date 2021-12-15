@@ -1,0 +1,25 @@
+openapi: 3.1.0
+info:
+  title: SAP
+  version: '1.0'
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  '/BusinessGroup/{BGID}':
+    parameters:
+      - $ref: ./common/common.yaml#/components/parameters/BGID
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-BusinessGroup-BGID
+  '/BusinessUnit/{BUID}':
+    parameters:
+      - $ref: ./common/common.yaml#/components/parameters/BGID
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-BusinessGroup-BGID
+components:
+  schemas: {}
